@@ -1,0 +1,77 @@
+
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+  background: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+.screen {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.play-button {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: transform 0.15s ease;
+}
+.play-button:active {
+  transform: scale(0.95);
+}
+.triangle {
+  width: 0;
+  height: 0;
+  border-top: 38px solid transparent;
+  border-bottom: 38px solid transparent;
+  border-left: 58px solid #000;
+  margin-left: 12px;
+}
+.hint {
+  position: absolute;
+  bottom: 35px;
+  color: #aaa;
+  font-size: 13px;
+  text-align: center;
+  padding: 0 20px;
+}
+@media (max-width: 400px) {
+  .play-button {
+    width: 140px;
+    height: 140px;
+  }
+  .triangle {
+    border-top-width: 32px;
+    border-bottom-width: 32px;
+    border-left-width: 49px;
+  }
+}
+</style>
+</head>
+<body>
+<main class="screen">
+  <a class="play-button"
+     href="https://lite.tiktok.com/t/ZS9yG9Y7L2HEU-wl1FU/"
+     aria-label="TikTok Liteの招待リンクを開く">
+    <span class="triangle"></span>
+  </a>
+</main>
+</body>
+</html>
